@@ -28,13 +28,13 @@ import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
 
 const profileFormSchema = z.object({
-  username: z
+  project: z
     .string()
-    .min(2, {
-      message: "Username must be at least 2 characters.",
+    .min(8, {
+      message: "Scheme/Project name must be at least 8 characters.",
     })
     .max(30, {
-      message: "Username must not be longer than 30 characters.",
+      message: "Scheme/Project must not be longer than 30 characters.",
     }),
   email: z
     .string({
@@ -55,7 +55,7 @@ type ProfileFormValues = z.infer<typeof profileFormSchema>
 
 // This can come from your database or API.
 const defaultValues: Partial<ProfileFormValues> = {
-  bio: "I own a computer.",
+  bio: "Describe your Scheme/Project",
   urls: [
     { value: "https://shadcn.com" },
     { value: "http://twitter.com/shadcn" },
@@ -90,16 +90,15 @@ export function ProfileForm() {
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
           control={form.control}
-          name="username"
+          name="project"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Scheme/Project Name</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter your Project Name here" {...field} />
               </FormControl>
               <FormDescription>
-                This is your public display name. It can be your real name or a
-                pseudonym. You can only change this once every 30 days.
+                This is your Project Name. It must be a government given valid Project Name.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -110,11 +109,11 @@ export function ProfileForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Department Email</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a verified email to display" />
+                    <SelectValue placeholder="Enter your Government verified Department email" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
@@ -136,10 +135,10 @@ export function ProfileForm() {
           name="bio"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Bio</FormLabel>
+              <FormLabel>Description</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell us a little bit about yourself"
+                  placeholder="Describe your Scheme/Project"
                   className="resize-none"
                   {...field}
                 />
