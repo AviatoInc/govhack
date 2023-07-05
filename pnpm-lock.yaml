@@ -9,6 +9,7 @@ specifiers:
   '@radix-ui/react-icons': ^1.3.0
   '@radix-ui/react-label': ^2.0.2
   '@radix-ui/react-popover': ^1.0.6
+  '@radix-ui/react-radio-group': ^1.1.3
   '@radix-ui/react-select': ^1.2.2
   '@radix-ui/react-separator': ^1.0.3
   '@radix-ui/react-slot': ^1.0.2
@@ -47,6 +48,7 @@ dependencies:
   '@radix-ui/react-icons': 1.3.0_react@18.2.0
   '@radix-ui/react-label': 2.0.2_hrrtw4it2dqo6rzcqzvl36ff7i
   '@radix-ui/react-popover': 1.0.6_hrrtw4it2dqo6rzcqzvl36ff7i
+  '@radix-ui/react-radio-group': 1.1.3_hrrtw4it2dqo6rzcqzvl36ff7i
   '@radix-ui/react-select': 1.2.2_hrrtw4it2dqo6rzcqzvl36ff7i
   '@radix-ui/react-separator': 1.0.3_hrrtw4it2dqo6rzcqzvl36ff7i
   '@radix-ui/react-slot': 1.0.2_i73ekzlbntu7jol6ph2fvy4mga
@@ -984,6 +986,36 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.5
       '@radix-ui/react-slot': 1.0.2_i73ekzlbntu7jol6ph2fvy4mga
+      '@types/react': 18.2.14
+      '@types/react-dom': 18.2.6
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@radix-ui/react-radio-group/1.1.3_hrrtw4it2dqo6rzcqzvl36ff7i:
+    resolution: {integrity: sha512-x+yELayyefNeKeTx4fjK6j99Fs6c4qKm3aY38G3swQVTN6xMpsrbigC0uHs2L//g8q4qR7qOcww8430jJmi2ag==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.22.5
+      '@radix-ui/primitive': 1.0.1
+      '@radix-ui/react-compose-refs': 1.0.1_i73ekzlbntu7jol6ph2fvy4mga
+      '@radix-ui/react-context': 1.0.1_i73ekzlbntu7jol6ph2fvy4mga
+      '@radix-ui/react-direction': 1.0.1_i73ekzlbntu7jol6ph2fvy4mga
+      '@radix-ui/react-presence': 1.0.1_hrrtw4it2dqo6rzcqzvl36ff7i
+      '@radix-ui/react-primitive': 1.0.3_hrrtw4it2dqo6rzcqzvl36ff7i
+      '@radix-ui/react-roving-focus': 1.0.4_hrrtw4it2dqo6rzcqzvl36ff7i
+      '@radix-ui/react-use-controllable-state': 1.0.1_i73ekzlbntu7jol6ph2fvy4mga
+      '@radix-ui/react-use-previous': 1.0.1_i73ekzlbntu7jol6ph2fvy4mga
+      '@radix-ui/react-use-size': 1.0.1_i73ekzlbntu7jol6ph2fvy4mga
       '@types/react': 18.2.14
       '@types/react-dom': 18.2.6
       react: 18.2.0
