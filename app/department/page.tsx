@@ -51,7 +51,7 @@ export default async function Home() {
       {/* Projects */}
       <div className="w-full flex  flex-col justify-center items-center">
         {projects?.map((project: any) => (
-          <div className="w-3/4 p-4 rounded-md mx-3 my-2 bg-slate-200 flex flex-col justify-center">
+          <div key={project.id} className="w-3/4 p-4 rounded-md mx-3 my-2 bg-slate-200 flex flex-col justify-center">
             {/* Title and Action */}
             <div className="flex items-center my-3 border-gray-50">
               <div className="mr-auto">

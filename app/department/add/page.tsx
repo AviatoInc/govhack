@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { Fragment, useRef } from "react";
 import { Toaster, toast } from "react-hot-toast";
-const postProject = async ({
+const PostProject = async ({
   title,
   description,
   targetFixed,
@@ -25,7 +25,7 @@ const postProject = async ({
   return (await res).json();
 };
 
-const addProjecr = () => {
+const AddProject = () => {
   const router = useRouter();
   const titleRef = useRef<HTMLInputElement | null>(null);
   const descriptionRef = useRef<HTMLTextAreaElement | null>(null);
@@ -36,7 +36,7 @@ const addProjecr = () => {
     e.preventDefault();
     if (titleRef.current && descriptionRef.current && targetFixedRef.current && deadlineRef.current && achievedRef.current) {
       toast.loading("Sending Request 🚀", { id: "1" });
-      await postProject({
+      await PostProject({
         title: titleRef.current?.value,
         description: descriptionRef.current?.value,
         targetFixed: targetFixedRef.current?.value,
@@ -100,4 +100,4 @@ const addProjecr = () => {
   );
 };
 
-export default addProjecr;
+export default AddProject;

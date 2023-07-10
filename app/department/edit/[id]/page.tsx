@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { Toaster, toast } from "react-hot-toast";
 type UpdateProjectParams = {
   title: string;
@@ -61,6 +61,7 @@ const EditProject = ({ params }: { params: { id: string } }) => {
         console.log(err);
         toast.error("Error fetching Project", { id: "1" });
       });
+      // eslint-disable-next-line
   }, []);
 
   const handleSubmit = async (e: any) => {
