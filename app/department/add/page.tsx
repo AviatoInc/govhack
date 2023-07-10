@@ -25,7 +25,7 @@ const postProject = async ({
   return (await res).json();
 };
 
-const addProjecr = () => {
+const AddProject = () => {
   const router = useRouter();
   const titleRef = useRef<HTMLInputElement | null>(null);
   const descriptionRef = useRef<HTMLTextAreaElement | null>(null);
@@ -100,4 +100,4 @@ const addProjecr = () => {
   );
 };
 
-export default addProjecr;
+export default AddProject;

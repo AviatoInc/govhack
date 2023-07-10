@@ -50,8 +50,8 @@ export default async function Home() {
       </div>
       {/* Projects */}
       <div className="w-full flex  flex-col justify-center items-center">
-        {projects?.map((project: any) => (
-          <div className="w-3/4 p-4 rounded-md mx-3 my-2 bg-slate-200 flex flex-col justify-center">
+        {projects?.map((project: any, idx: number) => (
+          <div className="w-3/4 p-4 rounded-md mx-3 my-2 bg-slate-200 flex flex-col justify-center" key={idx}>
             {/* Title and Action */}
             <div className="flex items-center my-3 border-gray-50">
               <div className="mr-auto">
