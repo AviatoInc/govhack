@@ -12,7 +12,7 @@ type UpdateProjectParams = {
   id: string;
 };
 const updateProject = async (data: UpdateProjectParams) => {
-  const res = fetch(`http://localhost:3000/api/department/${data.id}`, {
+  const res = fetch(`http://127.0.0.1:3000/api/department/${data.id}`, {
     method: "PUT",
     body: JSON.stringify({ title: data.title, description: data.description , targetFixed: data.targetFixed, deadline: data.deadline, achieved:data.achieved }),
     //@ts-ignore
@@ -22,7 +22,7 @@ const updateProject = async (data: UpdateProjectParams) => {
 };
 
 const deleteProject = async (id: string) => {
-  const res = fetch(`http://localhost:3000/api/department/${id}`, {
+  const res = fetch(`http://127.0.0.1:3000/api/department/${id}`, {
     method: "DELETE",
     //@ts-ignore
     "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const deleteProject = async (id: string) => {
 };
 
 const getProjectById = async (id: string) => {
-  const res = await fetch(`http://localhost:3000/api/department/${id}`);
+  const res = await fetch(`http://127.0.0.1:3000/api/department/${id}`);
   const data = await res.json();
   return data.project;
 };
