@@ -21,6 +21,7 @@ specifiers:
   '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
   autoprefixer: 10.4.14
+  chart.js: ^4.1.1
   class-variance-authority: ^0.6.1
   clsx: ^1.2.1
   cmdk: ^0.2.0
@@ -35,6 +36,7 @@ specifiers:
   prisma: ^4.16.2
   prop-types: ^15.8.1
   react: 18.2.0
+  react-chartjs-2: ^5.2.0
   react-day-picker: ^8.8.0
   react-dom: 18.2.0
   react-hook-form: ^7.45.1
@@ -68,6 +70,7 @@ dependencies:
   '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
   autoprefixer: 10.4.14_postcss@8.4.24
+  chart.js: 4.3.0
   class-variance-authority: 0.6.1
   clsx: 1.2.1
   cmdk: 0.2.0_qzycrpzqvmvb7wd2jdibmpq2cy
@@ -81,6 +84,7 @@ dependencies:
   postcss: 8.4.24
   prop-types: 15.8.1
   react: 18.2.0
+  react-chartjs-2: 5.2.0_jzw32sextkxj6pznyxerjojkqm
   react-day-picker: 8.8.0_kzhlcyde2l6xjiirkbg7jzhosa
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.45.1_react@18.2.0
@@ -233,6 +237,10 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: false
+
+  /@kurkle/color/0.3.2:
+    resolution: {integrity: sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw==}
     dev: false
 
   /@next/env/13.4.7:
@@ -1818,6 +1826,13 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: false
+
+  /chart.js/4.3.0:
+    resolution: {integrity: sha512-ynG0E79xGfMaV2xAHdbhwiPLczxnNNnasrmPEXriXsPJGjmhOBYzFVEsB65w2qMDz+CaBJJuJD0inE/ab/h36g==}
+    engines: {pnpm: '>=7'}
+    dependencies:
+      '@kurkle/color': 0.3.2
     dev: false
 
   /chokidar/3.5.3:
@@ -3590,6 +3605,16 @@ packages:
 
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+    dev: false
+
+  /react-chartjs-2/5.2.0_jzw32sextkxj6pznyxerjojkqm:
+    resolution: {integrity: sha512-98iN5aguJyVSxp5U3CblRLH67J8gkfyGNbiK3c+l1QI/G4irHMPQw44aEPmjVag+YKTyQ260NcF82GTQ3bdscA==}
+    peerDependencies:
+      chart.js: ^4.1.1
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      chart.js: 4.3.0
+      react: 18.2.0
     dev: false
 
   /react-day-picker/8.8.0_kzhlcyde2l6xjiirkbg7jzhosa:

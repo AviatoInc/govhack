@@ -45,7 +45,7 @@ const EditProject = ({ params }: { params: { id: string } }) => {
   const achievedRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
-    toast.loading("Fetching Project Details 🚀", { id: "1" });
+    toast.loading("Fetching Project Details ", { id: "1" });
     getProjectById(params.id)
       .then((data) => {
         if (titleRef.current && descriptionRef.current  && targetFixedRef.current && deadlineRef.current && achievedRef.current) {
@@ -66,7 +66,7 @@ const EditProject = ({ params }: { params: { id: string } }) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (titleRef.current && descriptionRef.current && targetFixedRef.current && deadlineRef.current && achievedRef.current) {
-      toast.loading("Sending Request 🚀", { id: "1" });
+      toast.loading("Sending Request ", { id: "1" });
       await updateProject({
         title: titleRef.current?.value,
         description: descriptionRef.current?.value,
@@ -107,17 +107,17 @@ const EditProject = ({ params }: { params: { id: string } }) => {
             ></textarea>
             <textarea
               ref={targetFixedRef}
-              placeholder="Enter Description"
+              placeholder="Enter Target"
               className="rounded-md px-4 py-2 w-full my-2"
             ></textarea>
             <textarea
               ref={deadlineRef}
-              placeholder="Enter Description"
+              placeholder="Enter Deadline"
               className="rounded-md px-4 py-2 w-full my-2"
             ></textarea>
             <textarea
               ref={achievedRef}
-              placeholder="Enter Description"
+              placeholder="Enter Status"
               className="rounded-md px-4 py-2 w-full my-2"
             ></textarea>
             

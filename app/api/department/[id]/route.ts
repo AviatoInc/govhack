@@ -4,7 +4,7 @@ import prisma from "@/prisma";
 
 export const GET = async (req: Request, res: NextResponse) => {
   try {
-    const id = req.url.split("/blog/")[1];
+    const id = req.url.split("/department/")[1];
     await main();
     const project = await prisma.project.findFirst({ where: { id } });
     if (!project)
@@ -19,7 +19,7 @@ export const GET = async (req: Request, res: NextResponse) => {
 
 export const PUT = async (req: Request, res: NextResponse) => {
   try {
-    const id = req.url.split("/blog/")[1];
+    const id = req.url.split("/department/")[1];
     const {title, description, targetFixed ,deadline, achieved  } = await req.json();
     await main();
     const project = await prisma.project.update({
@@ -36,7 +36,7 @@ export const PUT = async (req: Request, res: NextResponse) => {
 
 export const DELETE = async (req: Request, res: NextResponse) => {
   try {
-    const id = req.url.split("/blog/")[1];
+    const id = req.url.split("/department/")[1];
     await main();
     const project = await prisma.project.delete({ where: { id } });
     return NextResponse.json({ message: "Success", project }, { status: 200 });

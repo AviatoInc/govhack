@@ -76,7 +76,7 @@ const addProjecr = () => {
             ></textarea>
             <textarea
               ref={targetFixedRef}
-              placeholder="Scheme/Project Fixed Target"
+              placeholder="Scheme/Project Fixed Target(only Integer)"
               className="bg-slate-100 rounded-md px-4 py-2 w-full my-2"
             ></textarea>
             <textarea
