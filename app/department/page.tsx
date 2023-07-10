@@ -9,7 +9,7 @@ import {
 import { Barchart } from "@/components/ui/graph"
 
 async function fetchProjects() {
-  const res = await fetch("http://localhost:3000/api/department", {
+  const res = await fetch("http://127.0.0.1:3000/api/department", {
     next: {
       revalidate: 1,
     },

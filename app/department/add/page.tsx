@@ -16,7 +16,7 @@ const PostProject = async ({
   deadline: string;
   achieved: string;
 }) => {
-  const res = fetch("http://localhost:3000/api/department", {
+  const res = fetch("http://127.0.0.1:3000/api/department", {
     method: "POST",
     body: JSON.stringify({ title, description, targetFixed ,deadline, achieved }),
     //@ts-ignore
