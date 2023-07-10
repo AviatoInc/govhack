@@ -5,62 +5,62 @@ export function RecentSales() {
     <div className="space-y-8">
       <div className="flex items-center">
         <Avatar className="h-9 w-9">
-          <AvatarImage src="/avatars/01.png" alt="Avatar" />
-          <AvatarFallback>OM</AvatarFallback>
+          <AvatarImage src={`https://avatar.vercel.sh/864650.png`} alt="Avatar" />
+          <AvatarFallback>E</AvatarFallback>
         </Avatar>
         <div className="ml-4 space-y-1">
-          <p className="text-sm font-medium leading-none">Olivia Martin</p>
+          <p className="text-sm font-medium leading-none">Education</p>
           <p className="text-sm text-muted-foreground">
-            olivia.martin@email.com
+            Educational Scheme
           </p>
         </div>
-        <div className="ml-auto font-medium">+$1,999.00</div>
+        <div className="ml-auto font-medium">+1,999.00</div>
       </div>
       <div className="flex items-center">
         <Avatar className="flex h-9 w-9 items-center justify-center space-y-0 border">
-          <AvatarImage src="/avatars/02.png" alt="Avatar" />
-          <AvatarFallback>JL</AvatarFallback>
+          <AvatarImage src={`https://avatar.vercel.sh/132959.png`} alt="Avatar" />
+          <AvatarFallback>H</AvatarFallback>
         </Avatar>
         <div className="ml-4 space-y-1">
-          <p className="text-sm font-medium leading-none">Jackson Lee</p>
-          <p className="text-sm text-muted-foreground">jackson.lee@email.com</p>
+          <p className="text-sm font-medium leading-none">Health</p>
+          <p className="text-sm text-muted-foreground">Health Scheme</p>
         </div>
-        <div className="ml-auto font-medium">+$39.00</div>
+        <div className="ml-auto font-medium">+39.00</div>
       </div>
       <div className="flex items-center">
         <Avatar className="h-9 w-9">
-          <AvatarImage src="/avatars/03.png" alt="Avatar" />
-          <AvatarFallback>IN</AvatarFallback>
+          <AvatarImage src={`https://avatar.vercel.sh/162123.png`} alt="Avatar" />
+          <AvatarFallback>DS</AvatarFallback>
         </Avatar>
         <div className="ml-4 space-y-1">
-          <p className="text-sm font-medium leading-none">Isabella Nguyen</p>
+          <p className="text-sm font-medium leading-none">District Sports</p>
           <p className="text-sm text-muted-foreground">
-            isabella.nguyen@email.com
+            Disctrict Sports Scheme
           </p>
         </div>
-        <div className="ml-auto font-medium">+$299.00</div>
+        <div className="ml-auto font-medium">+299.00</div>
       </div>
       <div className="flex items-center">
         <Avatar className="h-9 w-9">
-          <AvatarImage src="/avatars/04.png" alt="Avatar" />
-          <AvatarFallback>WK</AvatarFallback>
+          <AvatarImage src={`https://avatar.vercel.sh/858860.png`} alt="Avatar" />
+          <AvatarFallback>E</AvatarFallback>
         </Avatar>
         <div className="ml-4 space-y-1">
-          <p className="text-sm font-medium leading-none">William Kim</p>
-          <p className="text-sm text-muted-foreground">will@email.com</p>
+          <p className="text-sm font-medium leading-none">Excise</p>
+          <p className="text-sm text-muted-foreground">Excise Scheme</p>
         </div>
-        <div className="ml-auto font-medium">+$99.00</div>
+        <div className="ml-auto font-medium">+99.00</div>
       </div>
       <div className="flex items-center">
         <Avatar className="h-9 w-9">
-          <AvatarImage src="/avatars/05.png" alt="Avatar" />
-          <AvatarFallback>SD</AvatarFallback>
+          <AvatarImage src={`https://avatar.vercel.sh/693627.png`} alt="Avatar" />
+          <AvatarFallback>PW</AvatarFallback>
         </Avatar>
         <div className="ml-4 space-y-1">
-          <p className="text-sm font-medium leading-none">Sofia Davis</p>
-          <p className="text-sm text-muted-foreground">sofia.davis@email.com</p>
+          <p className="text-sm font-medium leading-none">Public Works</p>
+          <p className="text-sm text-muted-foreground">Public Works Scheme</p>
         </div>
-        <div className="ml-auto font-medium">+$39.00</div>
+        <div className="ml-auto font-medium">+39.00</div>
       </div>
     </div>
   );
