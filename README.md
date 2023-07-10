@@ -25,4 +25,13 @@ By utilizing this CRM app, the District Administration of Sivasagar can effectiv
 <p align="center">
 <img src=".github/images/dashboard.png" alt="Dashboard page" style="width:100%" />
 </p>
-<p align="center"><b>Fig.3 - Dashboard</b></p>
+<p align="center"><b>Fig. 3 - Dashboard</b></p>
+
+<p align="center">
+<img src=".github/images/form.jpeg" alt="Form" style="width:100%" />
+</p>
+<p align="center"><b>Fig. 4 - Department Form</b></p>
+<p align="center">
+<img src=".github/images/input.jpeg" alt="Input" style="width:100%" />
+</p>
+<p align="center"><b>Fig. 5 - Department Data Entry</b></p>
