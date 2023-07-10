@@ -9,3 +9,20 @@ To facilitate data analysis and decision-making, the CRM app incorporates graphi
 Built on Next.js 13, a cutting-edge framework for developing React applications, this CRM app leverages the latest advancements in web development technology. This ensures optimal performance, scalability, and robustness, enabling the app to handle large amounts of data effectively while maintaining a smooth user experience.
 
 By utilizing this CRM app, the District Administration of Sivasagar can effectively manage and monitor the progress of various schemes and projects. The app empowers administrators, department users, and nodal officers to collaborate seamlessly, improving communication and coordination among different stakeholders. Ultimately, this CRM app plays a pivotal role in promoting the digital transformation of the government department and fostering efficient governance practices in line with the Digital India initiative.
+
+## Screenshots
+
+<p align="center">
+<img src=".github/images/signin.png" alt="Sigin page" style="width:100%" />
+</p>
+<p align="center"><b>Fig. 1 - Sign In page</b></p>
+
+<p align="center">
+<img src=".github/images/department.png" alt="Department page" style="width:100%" />
+</p>
+<p align="center"><b>Fig. 2 - Department Page</b></p>
+
+<p align="center">
+<img src=".github/images/dashboard.png" alt="Dashboard page" style="width:100%" />
+</p>
+<p align="center"><b>Fig.3 - Dashboard</b></p>
