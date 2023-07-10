@@ -12,17 +12,17 @@ By utilizing this CRM app, the District Administration of Sivasagar can effectiv
 
 ## Screenshots
 
-<figure>
+<p align="center">
 <img src=".github/images/signin.png" alt="Sigin page" style="width:100%" />
-<figcaption align = "center"><b>Fig. 1 - Sign In page</b></figcaption>
-</figure>
+</p>
+<p align="center"><b>Fig. 1 - Sign In page</b></p>
 
-<figure>
+<p align="center">
 <img src=".github/images/department.png" alt="Department page" style="width:100%" />
-<figcaption align = "center"><b>Fig. 2 - Department Page</b></figcaption>
-</figure>
+</p>
+<p align="center"><b>Fig. 2 - Department Page</b></p>
 
-<figure>
+<p align="center">
 <img src=".github/images/dashboard.png" alt="Dashboard page" style="width:100%" />
-<figcaption align = "center"><b>Fig.3 - Dashboard</b></figcaption>
-</figure>
+</p>
+<p align="center"><b>Fig.3 - Dashboard</b></p>
